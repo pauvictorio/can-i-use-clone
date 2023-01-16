@@ -1,0 +1,193 @@
+// Variables
+// Colors
+@base: rgb(200, 79, 0);
+@secondary: rgb(242, 233, 214);
+@text-base: white;
+@text-secondary: black;
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url(./img/caniuse-bg.png);
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+	padding-top: 16px;
+}
+
+// Navbar
+.nav-links {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: @text-base;
+	font-size: 30px;
+	border: 0;
+	text-decoration: none;
+	padding: 16px 20px;
+
+	&:hover {
+		background-color: rgb(173, 101, 0);
+		color: @text-base;
+		cursor: pointer;
+	}
+}
+
+// Header
+header {
+	background-color: @base;
+	color: @text-base;
+	text-align: center;
+	padding: 25px 0;
+
+	h1 {
+		display: inline-block;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			background-color: rgba(0,0,0,0.08);;
+			color: inherit;
+			cursor: pointer;
+		}
+	}
+
+	form {
+		display: inline-block;
+	}
+
+	input {
+		background-color: @base;
+		color: inherit;
+		font-size: 40px;
+		border: 0;
+		border-bottom: 1px solid white;
+		text-align: center;
+
+		&:focus {
+			background-color: rgba(255,255,255,0.2);
+			border: 0;
+			border-bottom: 1px solid white;
+			outline: none;
+		}
+	}
+}
+
+// Main Section
+main {
+	background-color: @secondary;
+	padding: 20px;
+
+	h2 {
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+
+.side-ft {
+	display: inline;
+	background-color: @base;
+	color: @text-base;
+	font-size: 35px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 10px;
+	position: relative;
+	left: -43px;
+	top: 80px;
+
+	&:hover {
+		color: @text-base;
+	}
+}
+
+.grid-table {
+	text-align: center;
+
+	div {
+		border-bottom: 5px solid black;
+
+		h4 {
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+}
+
+.versions-container {
+	margin-bottom: 40px;
+
+	div {
+		color: @text-base;
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
+.container-cells {
+
+	div {
+		padding: 4px 0;
+		margin: 4px 0;
+	}
+
+	ol {
+		padding: 0;
+		margin: 0;
+		position: absolute;
+
+		li {
+			background-color: white;
+			color: black;
+			font-size: 13px;
+			font-weight: bold;
+			text-align: start;
+			padding: 0 5px;
+			position: relative;
+			bottom: 38px;
+			left: 2px;
+			list-style: none;
+		}
+	}
+}
+
+.empty-box {
+	background-color: rgb(234, 226, 207);
+	color: rgb(234, 226, 207) !important;
+	padding: 6px !important;
+	margin: 0 !important;
+}
+
+.unsupported {
+	background-color: rgb(129, 0, 0);
+
+	&:hover {
+		background-color: rgb(196, 66, 48);
+		cursor: pointer;
+	}
+}
+
+.partial {
+	background-color: rgb(148, 112, 12);
+
+	&:hover {
+		background-color: rgb(181, 136, 13);
+		cursor: pointer;
+	}
+}
+
+.supported {
+	background-color: rgb(37, 133, 51);
+
+	&:hover {
+		background-color: rgb(40, 159, 58);
+		cursor: pointer;
+	}
+}
